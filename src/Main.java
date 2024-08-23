@@ -4,7 +4,6 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int option;
-
         do {
             System.out.println("Menu:");
             System.out.println("1. Exibir saudação");
@@ -12,7 +11,6 @@ public class Main {
             System.out.println("3. Sair");
             System.out.print("Escolha uma opção: ");
             option = scanner.nextInt();
-
             switch (option) {
                 case 1:
                     Utils.displayGreeting();
@@ -33,7 +31,6 @@ public class Main {
                     break;
             }
         } while (option != 3);
-
         scanner.close();
     }
 }
